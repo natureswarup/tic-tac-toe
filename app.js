@@ -41,11 +41,11 @@ function checkWinner() {
   }
 }
 
-let test = document.getElementsByTagName('td')
+let cells = document.getElementsByTagName('td')
 
-let test2 = Array.prototype.slice.call(test)
+let cellsArr = Array.prototype.slice.call(cells)
 
-test2.map((item) => {
+cellsArr.map((item) => {
   item.addEventListener('click', () => {
     if (item.innerHTML === '') {
       if (playerOneTurn) {
